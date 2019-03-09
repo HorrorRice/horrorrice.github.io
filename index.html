@@ -1,116 +1,120 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=google0a6624eb599ef4e9"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'google0a6624eb599ef4e9');
-	</script>
-	<meta name="google-site-verification" content="WV_Sd5mJGrNo_ND0wDLAB7ZkNrEybT6X2n_5MsO4nxg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <title>Personal Portfolio</title>
+    <meta name="google-site-verification" content="WV_Sd5mJGrNo_ND0wDLAB7ZkNrEybT6X2n_5MsO4nxg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>Rifqi Taufiqul Hakim</title>
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=google0a6624eb599ef4e9"></script>
+<script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'google0a6624eb599ef4e9');
+</script>
 
 <body>
-
-    <nav id="nav">
-        <ul>
-            <li>
-                <a href="#welcome-section">About</a>
-            </li>
-            <li>
-                <a href="#project-section">Work</a>
-            </li>
-            <li>
-                <a href="#contact-section">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!--============WELCOME SECTION START===========-->
-    <section id="welcome-section">
-        <div class="introduction">
-            <h1>Hey i'm Rifqi.<br><span>a web developer</span></h1>
-        </div>
-    </section>
-
-    <!--============PROJECT SECTION START===========-->
-    <section id="project-section">
-        <h2>These are some of my projects..</h2>
-        <div class="card-wrapper">
-            <div class="card">
-                <a href="https://codepen.io/nodevillivedon/full/yZOXPR" target="_blank" title="Tribute Page"><img src="assets/images/tribute-page.png" alt="Tribute Page">
-                    <div>
-                        <p>Tribute Page</p>
-                </a>
+    <div class="container">
+        <input type="checkbox" id="dark_mode">
+        <div class="hero-bg" id="about">
+            <div class="nav-bar">
+                <div class="text-link">
+                    <a href="#about" title="About">About</a>
+                </div>
+                <div class="text-link">
+                    <a href="#projects" title="Project">Projects</a>
+                </div>
+                <div class="text-link">
+                    <a href="#contact" title="Contact Me">Contact</a>
+                </div>
             </div>
-
-        </div>
-
-        <div class="card">
-            <a href="https://codepen.io/FreeCodeCamp/full/NNvBQW" target="_blank" title="Survey Form"><img src="assets/images/survey-form.png" alt="Survey Form">
-                <div>
-                    <p>Survey Form</p>
-            </a>
-        </div>
-
-        </div>
-
-        <div class="card">
-            <a href="https://codepen.io/nodevillivedon/full/pGbwVK" target="_blank" title="Product Landing Page"><img src="assets/images/product-page.png" alt="Tribute Page">
-                <div>
-                    <p>Product Landing Page</p>
-            </a>
-        </div>
-
-        </div>
-
-        <div class="card">
-            <a href="https://codepen.io/nodevillivedon/full/PVzRrK" target="_blank" title="JS Documentation"><img src="assets/images/documentation.png" alt="JS Documentation">
-                <div>
-                    <p>JS Documentation</p>
-            </a>
-        </div>
-
-        </div>
-        </div>
-        <div class="show-all">
-            <a href="https://codepen.io/nodevillivedon/"><button>Show All</button></a>
-        </div>
-    </section>
-    <!--============CONTACT SECTION START===========-->
-    <section id="contact-section" class="contact">
-
-        <div class="header">
-            <h1>Let's work together...</h1>
-            <p>How do you take your coffee?</p>
-        </div>
-
-        <div class="chip-wrapper">
-            <div class="chip">
-                <a href="https://www.github.com/HorrorRice"><img src="assets/images/github-logo.png" alt="GitHub Page" width="96" height="96">
-                    <span>HorrorRice</span></a>
+            <div class="hero-content">
+                <h1 class="hero-title">Rifqi</h1>
+               <a href="#projects"><h2 class="hero-subtitle">Explore Projects</h2></a>
+                <div class="switch_mode text-link">
+                    <label for="dark_mode">Dark Mode</label>
+                </div>
             </div>
-
-            <div class="chip">
-                <a href="mailto:th.rifqi@gmail.com"><img src="assets/images/email.png" alt="Email me" width="96" height="96">
-                    <span>Gmail</span></a>
+            <div id="projects" class="card-container">
+                <!-- ## CARD 1 START ## -->
+                <div id="card-1" class="card-item" onClick="window.open('https://codepen.io/nodevillivedon/full/yZOXPR', '_blank');">
+                    <img class="card-thumbnail" src="assets/img/tribute-page.jpg" alt="Tribute Page">
+                    <div class="card-content">
+                        <a class="card-category-text" href="#categories/html" title="See more like this">
+                            <div class="card-category">
+                                HTML/CSS
+                            </div>
+                        </a>
+                        <h1 class="card-title">Tribute Page</h1>
+                        <h2 class="card-subtitle">Dr. Norman Borlaug</h2>
+                    </div>
+                </div>
+                <!-- ## CARD 1 END ## -->
+                <!-- ## CARD 2 START ## -->
+                <div id="card-2" class="card-item" onClick="window.open('https://codepen.io/FreeCodeCamp/full/NNvBQW', '_blank');">
+                    <img class="card-thumbnail" src="assets/img/survey-form.png" alt="Survey Form">
+                    <div class="card-content">
+                        <a class="card-category-text" href="#categories/html" title="See more like this">
+                            <div class="card-category">
+                                HTML/CSS
+                            </div>
+                        </a>
+                        <h1 class="card-title">Survey Form</h1>
+                        <h2 class="card-subtitle">freeCodeCamp Survey</h2>
+                    </div>
+                </div>
+                <!-- ## CARD 2 END ## -->
+                <!-- ## CARD 3 START ## -->
+                <div id="card-3" class="card-item" onClick="window.open('https://codepen.io/nodevillivedon/full/pGbwVK', '_blank');">
+                    <img class="card-thumbnail" src="assets/img/product-page.png" alt="Product Landing Page">
+                    <div class="card-content">
+                        <a class="card-category-text" href="#categories/html" title="See more like this">
+                            <div class="card-category">
+                                HTML/CSS
+                            </div>
+                        </a>
+                        <h1 class="card-title">Product Landing Page</h1>
+                        <h2 class="card-subtitle">Original Trombones</h2>
+                    </div>
+                </div>
+                <!-- ## CARD 3 END ## -->
+                <!-- ## CARD 4 START ## -->
+                <div id="card-1" class="card-item" onClick="window.open('https://codepen.io/nodevillivedon/full/PVzRrK', '_blank');">
+                    <img class="card-thumbnail" src="assets/img/documentation.png" alt="JavaScript Documentation">
+                    <div class="card-content">
+                        <a class="card-category-text" href="#categories/html" title="See more like this">
+                            <div class="card-category">
+                                HTML/CSS
+                            </div>
+                        </a>
+                        <h1 class="card-title">JS Documentation</h1>
+                        <h2 class="card-subtitle"> JavaScript Documentation </h2>
+                    </div>
+                </div>
+                <!-- ## CARD 4 END ## -->
+            </div>
+            <div id="contact">
+                <div class="header">
+                    <h1>Let's work together...</h1>
+                    <p>How do you take your coffee?</p>
+                </div>
+                <div class="chip-wrapper">
+                    <div class="chip">
+                        <a href="https://www.github.com/HorrorRice"><img src="assets/img/github.png" width="96" height="96">
+                            <span>HorrorRice</span></a>
+                    </div>
+                    <div class="chip">
+                        <a href="mailto:th.rifqi@gmail.com"><img src="assets/img/email.png" width="96" height="96">
+                            <span>Gmail</span></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
-
-    <footer>*This is just a fake portfolio, made for freecodecamp Responsive Web Design.*
-        <p>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a>,
-            <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>
-            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
-            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
-    </footer>
+    </div>
 </body>
 
 </html>
